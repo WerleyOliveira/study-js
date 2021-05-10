@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>binary converter</title>
+</head>
+<body>
+
+    <div class="main">
+        <div class="binario">
+            <label for="numbin">Digite um número binário:</label><br>
+            <div class="bi">
+                <input class="number" type="text" id="numbin" name="numbin" value=""><br>
+                <button class="button" id="btBinario" type="submit">converter</button>
+            </div>
+            <p class="resultado">O número decimal é:</p>
+            <p class="resultdecimal"></p>
+        </div>
+
+        <div class="decimal">
+            <label class="numdec" for="numdec">Digite um número decimal</label><br>
+            <div class="dec">
+                 <input class="number" type="text" id="numdec" name="numdec" value=""><br>
+                 <button class="button" id="btDecimal" type="submit">converter</button>
+             </div>    
+            <p class="resultado">O número binário é:</p>
+            <p class="resultbinario"></p>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>
