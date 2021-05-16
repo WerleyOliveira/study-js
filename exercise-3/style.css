@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Happy Monkey', cursive;
+}
+
+.container {
+   position: relative;  
+   height: 100vh; 
+}
+
+.modal {
+    background-image: url(./img/default.jpg);
+    content: "";
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+.main {
+    text-align: center;
+}
+.separetor {
+    border-right: 1px solid black;
+}
+
+.weather {
+    text-align: -webkit-center;
+    margin-left: 83px;
+}
+
+.location-flag {
+    display: inline-flex;
+    align-items: center;
+}
+
+.flag {
+    margin-left: 10px;
+    background-image: url(./flags/default.png);
+    width: 32px;
+    height: 32px;
+}
+
+.secret-key {
+    margin-left: -105px;
+}
+
+.current-temperature {
+    margin-right: 15px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.maximum-temperature {
+    margin-left: 15px;
+}
+
+.minimum-temperature {
+    margin-left: 15px;
+}
+
+.humidity {
+    margin-left: 31px;
+}
+
+#input-password {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#button-submit {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
+
+.fa-wind, .fa-tint {
+    margin-left: 25px;
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+.fa-temperature-high{
+    color: red;
+}
+
+.fa-temperature-low {
+    color: blue;
+}
+
+.btn {
+    border: none;
+    color: #ffffff;
+    padding: 4px;
+    margin: -30px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+#button-submit {
+  background-color: lightgreen;
+}
+
+#button-submit::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 32px;
+    background: rgba(0, 128, 0, 0.3);
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+
+#button-submit:hover::before {
+    width: 100%;
+    color: black;
+}
