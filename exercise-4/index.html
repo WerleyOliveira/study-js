@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="menu">
+                <form class="form">
+                    <label class="label">What number do you want to converter?</label><br>
+                    <input type="text" id="user-number" value="" /><br>
+                    <button type="button" id="button"> converter </button><br>
+                    <select id="user-select">
+                        <option id="user-roman" value="roman-number">Arabic to Roman</option>
+                        <option id="user-arabic" value="arabic-number">Roman to Arabic</option>
+                    </select>
+                </form>
+                <br><br><br>
+                <p class="text"></p>
+                <p class="error"></p>
+                <br>
+                <br>
+                <p class="answer"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

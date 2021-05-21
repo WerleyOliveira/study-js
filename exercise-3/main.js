@@ -15,6 +15,8 @@
     let img = document.querySelector('.modal');
     let flag = document.querySelector('.flag');
 
+    console.log(UserCity.value);
+
     const imgs = {
         500: './img/rain.jpg',
         501: './img/scattered-cloud.jpg',
