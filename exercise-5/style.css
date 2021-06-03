@@ -1,0 +1,58 @@
+.data-base {
+    margin-left: 40px;
+}
+
+.td-data {
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    color: black;
+    background-color: grey;
+    font-weight: bold;
+}
+
+.td-data:hover {
+    background-color: white;
+    color: grey;
+}
+
+.main {
+    width: 100%;
+    height: 100px;
+}
+
+.obj {
+    display: flex;
+}
+
+.radio {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.radio:hover {
+    cursor: pointer;
+}
+
+#button {
+    margin-top: 15px;
+    margin-left: 168px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+    border: 1px solid black;
+}
+
+#user-select {
+    margin-left: 20px;
+}
+
+.label {
+    font-family: 'Work Sans', sans-serif;
+}

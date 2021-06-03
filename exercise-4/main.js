@@ -11,6 +11,10 @@
     button.addEventListener('click', romanToArabic);
 
     function romanToArabic() {
+        errorMessage[0].textContent = '';
+        text[0].textContent = '';
+        answer[0].textContent = '';
+
         if (number.value > 3999){
             errorMessage[0].textContent = "Sorry! You must choose a number between 1 and 3.999.";
             return;

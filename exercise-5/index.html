@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Word Counter</title>
+</head>
+
+<body>
+
+
+    <div class="container ">
+        <div class="main">
+            <div class="obj">
+                <textarea id="user-text" name="button" rows="10" cols="80"
+                    placeholder="type or paste your text here!"></textarea><br>
+                <div id="data">
+                    <table id="data-base" class="data-base">
+                        <tbody id="table-body">
+                    </table>
+                </div>
+            </div>
+            <div>
+                <label class="label">Do you want to count letter or word?</label>
+                <label class="radio">
+                    <input id="letter" type="radio" name="option" value="letter" checked>Letter
+                </label>
+                <label class="radio">
+                    <input id="word" type="radio" name="option" value="word">Word
+                </label>
+            </div>
+            <label class="label"> How do you want to count your text?</label>
+            <select id="user-select" value="">
+                <option selected disabled value="">Select</option>
+                <option id="original-text" value="original-text">Original Text</option>
+                <option id="upper-case" value="upper-case">UPPER CASE</option>
+                <option id="lower-case" value="lower-case">lower case</option>
+            </select>
+
+            <button id="button" type="button">count</button>
+
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+    <script src="./lib.js"></script>
+</body>
+
+</html>
