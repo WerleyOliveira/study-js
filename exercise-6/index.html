@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+
+<body onselectstart="return false">
+
+    <div class="container">
+        <div class="main">
+            <p id="signal"></p>
+            <p id="display"></p>
+            <table>
+                <div class="calculator-buttons">
+                    <tr>
+                        <td><button class="button grey1" id="clean-calculator">AC</button></td>
+                        <td><button class="button grey1" id="backspace"><</button></td>
+                        <td><button class="button grey1" id="plus-minus">±</button></td>
+                        <td><button class="button orange operator" id="operator-divide" value="/" onclick="insert('/')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button grey2" id="keybutton-7">7</button></td>
+                        <td><button class="button grey2" id="keybutton-8">8</button></td>
+                        <td><button class="button grey2" id="keybutton-9">9</button></td>
+                        <td><button class="button orange operator" id="operator-multiply" value="*" onclick="insert('*')">*</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="button grey2" id="keybutton-4">4</button></td>
+                        <td><button class="button grey2" id="keybutton-5">5</button>
+                        <td><button class="button grey2" id="keybutton-6">6</button></td>
+                        <td><button class="button orange operator" id="operator-minus" value="-" onclick="insert('-')">-</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="button grey2" id="keybutton-1">1</button></td>
+                        <td><button class="button grey2" id="keybutton-2">2</button></td>
+                        <td><button class="button grey2" id="keybutton-3">3</button></td>
+                        <td><button class="button orange operator" id="operator-plus" value="+" onclick="insert('+')">+</button></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><button class="button button-0" id="keybutton-0">0</button></td>
+                        <td><button class="button grey2" id="comma">,</button></td>
+                        <td><button class="button orange" id="equals">=</button></td>
+                    </tr>
+                </div>
+            </table>
+        </div>
+    </div>
+
+    <script> 
+    function insert (num) {
+        document.getElementById('signal').innerHTML = num;
+    }
+    </script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
