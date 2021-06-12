@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.main {
+    border: 1px solid black;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    margin: 20px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.input-height {
+    height: 25px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.input-weight {
+    height: 25px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn-calculate {
+    text-transform: uppercase;
+    margin-left: 30%;
+    border-radius: 5px;
+    height: 25px;
+    width: 90px;
+    background:#228b22;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-calculate:hover {
+    background: #229a00;
+}
+
+.table-result1 {
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 150px;
+    width: 244px;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    position: absolute;
+    top: 57%;
+    left: 537px;
+
+}
+
+.table-result{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 150px;
+    width: 244px;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    position: absolute;
+    top: 57%;
+    left: 537px;
+}
+
+.td-remove {
+    color: red;
+}
+
+.td {
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 1px solid black;
+}
+
+.div-img {
+    background-size: 40px;
+    width: 50px;
+    height: 110px;
+    background-repeat: no-repeat;
+}

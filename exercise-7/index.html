@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>IMC - Calculate</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="main">
+            <div class="data-user">
+                <label id="label-height" class="label-heigh">Enter your height</label> <br>
+                <input id="input-height" class="input-height" type="text" placeholder="187 cm" value="" />
+                <label <i class="fas fa-sort-numeric-up-alt"></i></label> <br>
+                <label id="label-weight" class="label-weight"> Enter your weight</label><br>
+                <input id="input-weight" class="input-weight" type="text" placeholder="85 kg" />
+                <label <i class="fas fa-balance-scale-right"></i></label> <br>
+                <button id="btn-calculate" class="btn-calculate" type="button">Calculate</button>
+            </div>
+        </div>
+
+        <table id="table-result" class="table-result1">
+
+            <tr class="tr">
+                <td id="td-img" class="td-img" rowspan="4"><div id="div-img" class="div-img"></div></td>
+                <td id="imc-text" class="td-remove"></td>
+            </tr>
+            <tr class="tr">
+                <td id="imc-result" class="td-remove"></td>
+            </tr>
+            <tr class="tr">
+                <td id="text" class="td-remove"></td>
+            </tr>
+            <tr class="tr">
+                <td id="imc-message" class="td-remove"></td>
+            </tr>
+        </table>
+
+
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
